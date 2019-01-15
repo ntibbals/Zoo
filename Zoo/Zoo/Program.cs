@@ -8,5 +8,10 @@ namespace Zoo
         {
             Console.WriteLine("Hello World!");
         }
+
+        static void Zoo()
+        {
+
+        }
     }
 }
