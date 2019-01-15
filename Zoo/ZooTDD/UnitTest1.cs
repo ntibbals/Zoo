@@ -83,10 +83,27 @@ namespace ZooTDD
         [Fact]
         public void TurtleEating()
         {
-            /// Test that turtle laying eggs exhibits proper behavior
+            /// Test that turtle laying eating exhibits proper behavior
             SpottedTurtle turtle = new SpottedTurtle();
             string testEating = "Me eat food.";
             Assert.Equal(testEating, turtle.Eating());
+        }
+
+        [Fact]
+        public void GeckoSleepings()
+        {
+            /// Test that gecko sleeping exhibits proper behavior
+            LeopardGecko gecko = new LeopardGecko();
+            string testSleep = "Me sleep.";
+            Assert.Equal(testSleep, gecko.Sleeping());
+        }
+
+        [Fact]
+        public void GeckoMigrating()
+        {
+            /// Test that gecko Migrating exhibits proper behavior
+            LeopardGecko gecko = new LeopardGecko();
+            Assert.False(gecko.Migrates());
         }
     }
 }
