@@ -28,3 +28,9 @@
 - Encapuslation is a about access control. There are three primary access modifier: public, private and protected. 
 
 - For Unit testing purposes, withing this application the majority of the classes involved are in fact public.
+
+# Interface
+
+- An interface allows another struct or clas the ability to inherit its properties or behaviors.
+
+- Within this application, is a IHunt() and IMate() interface defined. The IHunt() Interface is implemented within the Feline, Leopard Gecko, and Orca structs. The IMate() Interface is implemented within the Blue Mountain Frog and Mammal structs.
