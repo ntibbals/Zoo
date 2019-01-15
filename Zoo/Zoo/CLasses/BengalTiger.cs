@@ -12,7 +12,7 @@ namespace Zoo.CLasses
 
         public string Climb()
         {
-            return "Claw, clay, up a tree to find Mowgli.";
+            return "Claw, claw, up a tree to find Mowgli.";
         }
 
         public string HideKill()
