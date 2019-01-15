@@ -7,7 +7,7 @@ namespace Zoo.CLasses
     public class LeopardGecko : Reptile
     {
         public int horns { get; set; }
-        public bool SaveMoney { get; set; } = return true;
+        public bool SaveMoney { get; set; } = true;
 
         public override bool Migrates()
         {
