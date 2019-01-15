@@ -41,5 +41,22 @@ namespace ZooTDD
             string testSleep = "Me sleep.";
             Assert.Equal(testSleep, lion.Sleeping());
         }
+        [Fact]
+        public void OrcaEat()
+        {
+            /// Test that orca eating exhibits proper behavior
+            Orca orca = new Orca();
+            string testEating = "Me eat food.";
+            Assert.Equal(testEating, orca.Eating());
+        }
+
+        [Fact]
+        public void OrcaSwims()
+        {
+            /// Test that orca swimming exhibits proper behavior
+            Orca orca = new Orca();
+            Assert.True(orca.Swim());
+        }
+
     }
 }
