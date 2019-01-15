@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.CLasses
 {
-    public class LeopardGecko : Reptile
+    public class LeopardGecko : Reptile, IHunt
     {
         public int horns { get; set; }
         public bool SaveMoney { get; set; } = true;
@@ -24,5 +25,19 @@ namespace Zoo.CLasses
             return "Burrow, burrow, burrow";
         }
 
+        public string Hunting()
+        {
+            return "Looking for some bugs...";
+        }
+
+        public bool FoundPrey()
+        {
+            return true;
+        }
+
+        public bool MadeKill()
+        {
+            return true;
+        }
     }
 }

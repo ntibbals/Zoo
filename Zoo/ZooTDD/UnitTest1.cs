@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using Zoo.CLasses;
+using Zoo.Interfaces;
 
 namespace ZooTDD
 {
@@ -138,6 +139,48 @@ namespace ZooTDD
             /// Test that Frog laying eggs exhibits proper behavior
             BlueMntTreeFrong frog = new BlueMntTreeFrong();
             Assert.True(frog.LaysEggs());
+        }
+
+        [Fact]
+        public void OrcaHunts()
+        {
+            ///Orac displaying appropriate interface behavior for IHunt
+            Orca orca = new Orca();
+            Assert.True(orca.MadeKill());
+        }
+
+        [Fact]
+        public void OrcaMates()
+        {
+            ///Orac displaying appropriate interface behavior for IMate
+            Orca orca = new Orca();
+            Assert.True(orca.Reproducing());
+        }
+
+        [Fact]
+        public void LionInterfaceInheritance()
+        {
+            /// mating Interface set within mammal, inherited
+            Lion lion = new Lion();
+            string expectedResult = "You and me baby ain't nothing but mamals";
+            Assert.Equal(expectedResult, lion.Mating());
+        }
+
+        [Fact]
+        public void MigrateOverride()
+        {
+            /// Overriding Migrate for Gecko to false
+            LeopardGecko gecko = new LeopardGecko();
+            Assert.False(gecko.Migrates());
+        }
+
+        [Fact]
+        public void RibbitOverride()
+        {
+            ///Override ribbit method
+            CaveSalamander sally = new CaveSalamander();
+            string expectedResult = "Slither, slither";
+            Assert.Equal(expectedResult, sally.Ribbit());
         }
     }
 }
