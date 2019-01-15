@@ -6,7 +6,7 @@ namespace Zoo.CLasses
 {
     public abstract class Animal
     {
-        public int Number_Of_Legs { get; set; }
+        public virtual int Number_Of_Legs { get; set; }
 
         public bool Tail { get; set; } = true;
 

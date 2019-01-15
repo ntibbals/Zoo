@@ -4,7 +4,14 @@ using System.Text;
 
 namespace Zoo.CLasses
 {
-    class Orca
+    public class Orca : Aquatic
     {
+        public bool EyeSpots { get; set; }
+        public bool WhiteBelly { get; set; }
+
+        public string JumpRockBase()
+        {
+            return "Free Willy!!";
+        }
     }
 }

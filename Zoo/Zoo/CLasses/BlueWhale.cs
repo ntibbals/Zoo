@@ -4,7 +4,14 @@ using System.Text;
 
 namespace Zoo.CLasses
 {
-    class BlueWhale
+    public class BlueWhale : Aquatic
     {
+        public override bool Carnivore { get; set; } = false;
+        public bool Eats_Plankton { get; set; } = true;
+
+        public string Sing()
+        {
+            return "Ooooooo OOOOoooooooo(whale noises)";
+        }
     }
 }
