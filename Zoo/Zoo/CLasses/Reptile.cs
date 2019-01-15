@@ -10,14 +10,14 @@ namespace Zoo.CLasses
         public bool Dry_Skin { get; set; }
         public virtual int Num_Spots { get; set; }
 
-        public virtual bool Lays_Eggs()
+        public virtual string ShedSkin()
         {
-            return true;
+            return "Molt, molt, molt";
         }
 
-        public virtual bool Migrates()
+        public virtual string Migrates()
         {
-            return true;
+            return "Let me migrate somewhere else";
         }
     }
 }

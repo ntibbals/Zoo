@@ -5,7 +5,7 @@ using Zoo.Interfaces;
 
 namespace Zoo.CLasses
 {
-    public class BlueMntTreeFrong : Amphibians, IMate
+    public class BlueMntTreeFrong : Amphibians, IMate, IHunt
     {
 
         public bool Lives_In_Tree { get; set; } = true;
@@ -14,6 +14,21 @@ namespace Zoo.CLasses
         public string Extend_Tongue()
         {
             return "Go go Gadget Tongue!";
+        }
+
+        public bool FoundPrey()
+        {
+            return true;
+        }
+
+        public string Hunting()
+        {
+            return "I think I see a fly to catch....";
+        }
+
+        public bool MadeKill()
+        {
+            return true;
         }
 
         public string Mating()

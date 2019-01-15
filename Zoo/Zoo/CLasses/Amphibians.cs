@@ -15,9 +15,9 @@ namespace Zoo.CLasses
             return "Ribbit, Ribbit";
         }
 
-        public virtual bool LaysEggs()
+        public virtual string Lays_Eggs()
         {
-            return true;
+            return "Let me lay my eggs";
         }
     }
 }

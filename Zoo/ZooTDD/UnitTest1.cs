@@ -79,7 +79,8 @@ namespace ZooTDD
         {
             /// Test that turtle laying eggs exhibits proper behavior
             SpottedTurtle turtle = new SpottedTurtle();
-            Assert.True(turtle.Lays_Eggs());
+            string expectedResult = "I don't molt but I've got a shell!";
+            Assert.Equal(expectedResult, turtle.ShedSkin());
         }
         [Fact]
         public void TurtleEating()
@@ -104,7 +105,8 @@ namespace ZooTDD
         {
             /// Test that gecko Migrating exhibits proper behavior
             LeopardGecko gecko = new LeopardGecko();
-            Assert.False(gecko.Migrates());
+            string expectedResult = "I'll stay where I am thank you";
+            Assert.Equal(expectedResult, gecko.Migrates());
         }
 
         [Fact]
@@ -138,7 +140,8 @@ namespace ZooTDD
         {
             /// Test that Frog laying eggs exhibits proper behavior
             BlueMntTreeFrong frog = new BlueMntTreeFrong();
-            Assert.True(frog.LaysEggs());
+            string expected = "Let me lay my eggs";
+            Assert.Equal(expected, frog.Lays_Eggs());
         }
 
         [Fact]
@@ -171,7 +174,8 @@ namespace ZooTDD
         {
             /// Overriding Migrate for Gecko to false
             LeopardGecko gecko = new LeopardGecko();
-            Assert.False(gecko.Migrates());
+            string expectedResult = "I'll stay where I am thank you";
+            Assert.Equal(expectedResult, gecko.Migrates());
         }
 
         [Fact]

@@ -16,6 +16,17 @@ namespace Zoo
             Console.WriteLine("**************************************");
             Tiger();
             Console.WriteLine("**************************************");
+            Orca();
+            Console.WriteLine("**************************************");
+            Whale();
+            Console.WriteLine("**************************************");
+            Sally();
+            Console.WriteLine("**************************************");
+            Lion();
+            Console.WriteLine("**************************************");
+            Turtle();
+            Console.WriteLine("**************************************");
+            Console.ReadLine();
         }
 
         static void Frog()
@@ -28,7 +39,7 @@ namespace Zoo
             Console.WriteLine($"Has a tale: {frog.Tail}");
             Console.WriteLine($"Lives in tree: {frog.Lives_In_Tree}");
             Console.WriteLine(frog.Ribbit());
-            Console.WriteLine(frog.LaysEggs());
+            Console.WriteLine(frog.Lays_Eggs());
             Console.WriteLine(frog.Extend_Tongue());
             Console.WriteLine(frog.Eating());
             Console.WriteLine(frog.Sleeping());
@@ -68,6 +79,34 @@ namespace Zoo
             Orca orca = new Orca();
             Console.WriteLine("Orca:");
             Console.WriteLine(orca.JumpRockBase());
+        }
+
+        static void Whale()
+        {
+            BlueWhale whale = new BlueWhale();
+            Console.WriteLine("Whale");
+            Console.WriteLine(whale.Mating());
+        }
+
+        static void Sally()
+        {
+            CaveSalamander sally = new CaveSalamander();
+            Console.WriteLine("Sally the Salamander:");
+            Console.WriteLine(sally.Lays_Eggs());
+        }
+
+        static void Lion()
+        {
+            Lion lion = new Lion();
+            Console.WriteLine("Lion:");
+            Console.WriteLine(lion.Hunting());
+        }
+
+        static void Turtle()
+        {
+            SpottedTurtle turtle = new SpottedTurtle();
+            Console.WriteLine("Turtle:");
+            Console.WriteLine(turtle.Migrates());
         }
     }
 }

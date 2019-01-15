@@ -22,7 +22,7 @@ namespace Zoo.CLasses
 
         public string JumpRockBase()
         {
-            return "Free Willy!!";
+            return "Jumps rock base...Free Willy!!";
         }
 
         public bool MadeKill()

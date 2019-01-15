@@ -10,9 +10,9 @@ namespace Zoo.CLasses
         public int horns { get; set; }
         public bool SaveMoney { get; set; } = true;
 
-        public override bool Migrates()
+        public override string Migrates()
         {
-            return false;
+            return "I'll stay where I am thank you";
         }
 
         public string Insurance_Quote()
