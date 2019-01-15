@@ -182,5 +182,19 @@ namespace ZooTDD
             string expectedResult = "Slither, slither";
             Assert.Equal(expectedResult, sally.Ribbit());
         }
+
+        [Fact]
+        public void TigerIsAnimal()
+        {
+            BengalTiger tiger = new BengalTiger();
+            Assert.IsAssignableFrom<Animal>(tiger);
+        }
+
+        [Fact]
+        public void TurtleIsAnimal()
+        {
+            SpottedTurtle turty = new SpottedTurtle();
+            Assert.IsAssignableFrom<Animal>(turty);
+        }
     }
 }
