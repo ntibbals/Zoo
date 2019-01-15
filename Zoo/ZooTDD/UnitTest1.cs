@@ -58,5 +58,35 @@ namespace ZooTDD
             Assert.True(orca.Swim());
         }
 
+        [Fact]
+        public void WhaleBirthing()
+        {
+            /// Test that Whale birthing exhibits proper behavior
+            BlueWhale whale = new BlueWhale();
+            Assert.True(whale.Birthing());
+        }
+        [Fact]
+        public void WhaleSleeping()
+        {
+            /// Test that Whale sleeping  exhibits proper behavior
+            BlueWhale whale = new BlueWhale();
+            string testSleep = "Me sleep.";
+            Assert.Equal(testSleep, whale.Sleeping());
+        }
+        [Fact]
+        public void TurtleEggs()
+        {
+            /// Test that turtle laying eggs exhibits proper behavior
+            SpottedTurtle turtle = new SpottedTurtle();
+            Assert.True(turtle.Lays_Eggs());
+        }
+        [Fact]
+        public void TurtleEating()
+        {
+            /// Test that turtle laying eggs exhibits proper behavior
+            SpottedTurtle turtle = new SpottedTurtle();
+            string testEating = "Me eat food.";
+            Assert.Equal(testEating, turtle.Eating());
+        }
     }
 }
