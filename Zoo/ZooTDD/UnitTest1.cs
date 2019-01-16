@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using Zoo.CLasses;
+using Zoo.Interfaces;
 
 namespace ZooTDD
 {
@@ -78,7 +79,8 @@ namespace ZooTDD
         {
             /// Test that turtle laying eggs exhibits proper behavior
             SpottedTurtle turtle = new SpottedTurtle();
-            Assert.True(turtle.Lays_Eggs());
+            string expectedResult = "I don't molt but I've got a shell!";
+            Assert.Equal(expectedResult, turtle.ShedSkin());
         }
         [Fact]
         public void TurtleEating()
@@ -103,7 +105,8 @@ namespace ZooTDD
         {
             /// Test that gecko Migrating exhibits proper behavior
             LeopardGecko gecko = new LeopardGecko();
-            Assert.False(gecko.Migrates());
+            string expectedResult = "I'll stay where I am thank you";
+            Assert.Equal(expectedResult, gecko.Migrates());
         }
 
         [Fact]
@@ -137,7 +140,65 @@ namespace ZooTDD
         {
             /// Test that Frog laying eggs exhibits proper behavior
             BlueMntTreeFrong frog = new BlueMntTreeFrong();
-            Assert.True(frog.LaysEggs());
+            string expected = "Let me lay my eggs";
+            Assert.Equal(expected, frog.Lays_Eggs());
+        }
+
+        [Fact]
+        public void OrcaInterfaceHunts()
+        {
+            ///Orac displaying appropriate interface behavior for IHunt
+            Orca orca = new Orca();
+            Assert.True(orca.MadeKill());
+        }
+
+        [Fact]
+        public void OrcaInterfaceMates()
+        {
+            ///Orac displaying appropriate interface behavior for IMate
+            Orca orca = new Orca();
+            Assert.True(orca.Reproducing());
+        }
+
+        [Fact]
+        public void LionInterfaceInheritance()
+        {
+            /// mating Interface set within mammal, inherited
+            Lion lion = new Lion();
+            string expectedResult = "You and me baby ain't nothing but mamals";
+            Assert.Equal(expectedResult, lion.Mating());
+        }
+
+        [Fact]
+        public void MigrateOverride()
+        {
+            /// Overriding Migrate for Gecko to false
+            LeopardGecko gecko = new LeopardGecko();
+            string expectedResult = "I'll stay where I am thank you";
+            Assert.Equal(expectedResult, gecko.Migrates());
+        }
+
+        [Fact]
+        public void RibbitOverride()
+        {
+            ///Override ribbit method
+            CaveSalamander sally = new CaveSalamander();
+            string expectedResult = "Slither, slither";
+            Assert.Equal(expectedResult, sally.Ribbit());
+        }
+
+        [Fact]
+        public void TigerIsAnimal()
+        {
+            BengalTiger tiger = new BengalTiger();
+            Assert.IsAssignableFrom<Animal>(tiger);
+        }
+
+        [Fact]
+        public void TurtleIsAnimal()
+        {
+            SpottedTurtle turty = new SpottedTurtle();
+            Assert.IsAssignableFrom<Animal>(turty);
         }
     }
 }
