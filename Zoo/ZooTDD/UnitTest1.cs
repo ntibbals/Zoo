@@ -145,7 +145,7 @@ namespace ZooTDD
         }
 
         [Fact]
-        public void OrcaHunts()
+        public void OrcaInterfaceHunts()
         {
             ///Orac displaying appropriate interface behavior for IHunt
             Orca orca = new Orca();
@@ -153,7 +153,7 @@ namespace ZooTDD
         }
 
         [Fact]
-        public void OrcaMates()
+        public void OrcaInterfaceMates()
         {
             ///Orac displaying appropriate interface behavior for IMate
             Orca orca = new Orca();
