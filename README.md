@@ -37,3 +37,4 @@
 
 # Sample OutPut
 ![SCREENSHOT](https://github.com/ntibbals/Zoo/blob/master/output.PNG)
+![SCREENSHOT](https://github.com/ntibbals/Zoo/blob/master/output2.PNG)
