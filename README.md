@@ -4,9 +4,6 @@
 
 - This is a zoo application. It utilizes OOP principles to instantiate different animals as objects, each inheriting different properties from their parent class.
 
-### Digital Diagram
-![PHOTO]()
-
 ### Techinical Outline
 
 # Inheritance
@@ -34,3 +31,9 @@
 - An interface allows another struct or clas the ability to inherit its properties or behaviors.
 
 - Within this application, is a IHunt() and IMate() interface defined. The IHunt() Interface is implemented within the Feline, Leopard Gecko, Blue Mountain Frog and Orca structs. The IMate() Interface is implemented within the Blue Mountain Frog, Spotted Turtle and Mammal structs.
+
+### Digital Diagram
+![PHOTO](https://github.com/ntibbals/Zoo/blob/master/diagram.PNG)
+
+# Sample OutPut
+![SCREENSHOT](https://github.com/ntibbals/Zoo/blob/master/output.PNG)
