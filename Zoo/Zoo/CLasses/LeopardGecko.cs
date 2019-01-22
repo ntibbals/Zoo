@@ -9,6 +9,7 @@ namespace Zoo.CLasses
     {
         public int horns { get; set; }
         public bool SaveMoney { get; set; } = true;
+        public override bool Dry_Skin { get; set; } = true;
 
         public override string Migrates()
         {

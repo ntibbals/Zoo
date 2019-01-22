@@ -13,5 +13,9 @@ namespace Zoo.CLasses
         {
             return "Ooooooo OOOOoooooooo(whale noises)";
         }
+        public override bool Swim()
+        {
+            return true;
+        }
     }
 }

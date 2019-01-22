@@ -7,7 +7,7 @@ namespace Zoo.CLasses
 {
     public abstract class Feline : Mammal, IHunt
     {
-        public bool Land_Based { get; set; } = true;
+        public abstract bool Land_Based { get; set; }
         public bool Has_paws { get; set; } = true;
 
         public bool FoundPrey()
@@ -25,9 +25,7 @@ namespace Zoo.CLasses
             return true;
         }
 
-        public string Roam()
-        {
-            return "Just roaming around....";
-        }
+        public abstract string Roam();
+  
     }
 }
