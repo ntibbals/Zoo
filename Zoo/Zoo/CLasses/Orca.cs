@@ -29,5 +29,10 @@ namespace Zoo.CLasses
         {
             return true;
         }
+
+        public override bool Swim()
+        {
+            return true;
+        }
     }
 }

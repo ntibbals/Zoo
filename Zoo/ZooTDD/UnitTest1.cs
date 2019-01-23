@@ -30,7 +30,7 @@ namespace ZooTDD
         {
             /// Test that lion roamingexhibits proper behavior
             Lion lion = new Lion();
-            string testRoam = "Just roaming around....";
+            string testRoam = "Roaming around in fields with my lioness";
             Assert.Equal(testRoam, lion.Roam());
         }
 

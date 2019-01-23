@@ -7,7 +7,7 @@ namespace Zoo.CLasses
 {
     public abstract class Reptile : Animal
     {
-        public bool Dry_Skin { get; set; }
+        public abstract bool Dry_Skin { get; set; }
         public virtual int Num_Spots { get; set; }
 
         public virtual string ShedSkin()

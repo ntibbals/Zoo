@@ -8,6 +8,8 @@ namespace Zoo.CLasses
     public class SpottedTurtle : Reptile, IMate
     {
         public bool Shell { get; set; } =  true;
+        public override bool Dry_Skin { get; set; } = true;
+
 
         public string Mating()
         {

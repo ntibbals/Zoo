@@ -9,6 +9,8 @@ namespace Zoo.CLasses
         public bool Orange_Black_Stripes { get; set; } = true;
         public bool Climber { get; set; } = true;
         public override bool Pack_Mentality { get; set; } = false;
+        public override bool Land_Based { get; set; } = true;
+
 
         public string Climb()
         {
@@ -18,6 +20,10 @@ namespace Zoo.CLasses
         public string HideKill()
         {
             return "Let me hide my prey from other predators.";
+        }
+        public override string Roam()
+        {
+            return "Roaming around the jungle";
         }
     }
 }

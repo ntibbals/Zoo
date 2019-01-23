@@ -11,9 +11,6 @@ namespace Zoo.CLasses
 
         public override int Number_Of_Legs { get => base.Number_Of_Legs; set => base.Number_Of_Legs = 0; }
 
-        public bool Swim()
-        {
-            return true;
-        }
+        public abstract bool Swim();
     }
 }
